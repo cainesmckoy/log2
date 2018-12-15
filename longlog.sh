@@ -9,7 +9,7 @@ while read MONTH DAY  A4 ; do
 		echo "${MONTH} ${DAY}  ${A4}"
 			
 	fi
-
+#THe access and erros logs had to be set to chmod 660
 echo "errors" >> final_log.txt
 sudo grep 'error' | /var/log/apache2/access_log >> final_log.txt
 echo "warnings" >> final_log.txt
