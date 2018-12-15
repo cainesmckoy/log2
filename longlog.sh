@@ -20,7 +20,7 @@ echo "--------------------------------------------------------------------------
 
 sudo grep 'warning'  /var/log/secure | sort -u >> final_log.txt
 
-echo "errors" > final_log.txt
+echo "errors" >> final_log.txt
 echo "--------------------------------------------------------------------------------------------"
 
 sudo grep 'error' /var/log/cron | sort -u >> final_log.txt
@@ -30,7 +30,7 @@ echo "--------------------------------------------------------------------------
 
 sudo grep 'warning'  /var/log/cron | sort -u >> final_log.txt
 
-echo "errors" > final_log.txt
+echo "errors" >> final_log.txt
 echo "--------------------------------------------------------------------------------------------"
 
 sudo grep 'error' /var/log/messages | sort -u >> final_log.txt
@@ -39,7 +39,7 @@ echo "--------------------------------------------------------------------------
 
 sudo grep 'warning'  /var/log/messages | sort -u >> final_log.txt
 
-echo "errors" > final_log.txt
+echo "errors" >> final_log.txt
 echo "--------------------------------------------------------------------------------------------"
 
 sudo grep 'error' /var/log/syslog| sort -u >> final_log.txt
@@ -47,7 +47,7 @@ echo "warnings" >> final_log.txt
 echo "--------------------------------------------------------------------------------------------"
 
 sudo grep 'warning'  /var/log/syslog | sort -u >> final_log.txt
-echo "errors" > final_log.txt
+echo "errors" >> final_log.txt
 echo "--------------------------------------------------------------------------------------------"
 
 sudo grep 'error' /var/log/apache2/access.log | sort -u >> final_log.txt
